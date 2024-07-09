@@ -1,0 +1,138 @@
+.full-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.top-section h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.nav a {
+  text-align: center;
+  background-color: #e4202c;
+  border: 1px solid #E4202C;
+  border-radius: 5px;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.text-img-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center
+}
+
+.left-text-btn {
+  background-color: #e4202c;
+  border: 1px solid #E4202C;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.line-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.color-org {
+  color: #FF7222;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  16.67% {
+    opacity: 0;
+  }
+
+  33.33%,
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top-section h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .left-section {
+    text-align: center;
+  }
+
+  .left-section p {
+    margin: 0 auto;
+  }
+
+  .text-img-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-flow: dense;
+  }
+
+  .text-img-section> :first-child {
+    order: 2;
+  }
+
+  .text-img-section> :last-child {
+    order: 1;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width: 768px) {
+  .left-section {
+    text-align: center;
+  }
+
+  .left-section p {
+    margin: 0 auto;
+  }
+
+  .text-img-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-flow: dense;
+  }
+
+  .text-img-section> :first-child {
+    order: 2;
+  }
+
+  .text-img-section> :last-child {
+    order: 1;
+  }
+}
